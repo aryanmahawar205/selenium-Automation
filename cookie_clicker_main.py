@@ -70,13 +70,9 @@ while True:
         
         product_price = int(product_price)
         
-        # is enough cookies are available in order to upgrade, we click on the upgrade
+        # if enough cookies are available in order to upgrade, we click on the upgrade option
+        # after that, break from the for loop and continue the process again
         if (cookies_count >= product_price):
             product = driver.find_element(By.ID, product_prefix + str(i))
             product.click()
             break
-
-driver.quit()
-
-
-cokkief= "djsf"        
